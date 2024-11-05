@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* div{
+    background: #000;
+} */
+#root {
+  height: 100vh;
+  width: auto;
+}
+
+.app-compo {
+  height: 100vh;
+  width: 100vw;
+  background: url('/app-bg.png') center no-repeat;
+  background-size: cover;
+}
+
+
+.signup-compo {
+  height: 100vh;
+}
+
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.signup-container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 5px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.music-compo {
+  height: 60px;
+  width: 40%;
+  padding: 4px;
+  background: #ada6a6;
+  border-radius: 4px;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.music-compo {
+  .music-img {
+    border-radius: 10%;
+    margin-right: 2%;
+    margin-left: 1%;
+
+    /* padding: 2%; */
+  }
+
+  .song-info {
+    width: 60%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+  }
+
+  .song-info {
+    .song-name {
+      font-size: large;
+      font-weight: 500;
+    }
+  }
+
+  .music-btn {
+    margin-right: 2%;
+    font-size: large;
+    /* border: 1px solid red; */
+  }
+
+  .fav-music {
+    /* color: red; */
+    font-size: 30px;
+    margin-right: 10%;
+  }
+
+}
+
+.login-compo {
+  /* border: 1px solid black; */
+  /* background-image: url('./login-bg.PNG'); */
+  background: url('../public/login-bg.PNG') center;
+}
+
+
+.app-footer {
+  height: 50px;
+  width: 100%;
+  background: #000;
+
+  .container {
+    color: white;
+    text-align: center;
+  }
+}
+
+.SignUp-compo {}
+
+
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-30px);
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */
+}
+
+.modal-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* github page */
+
+.loader {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #ada6a6;
+  animation: rotate-loader 3s linear 1s infinite;
+}
+
+@keyframes rotate-loader {
+  form {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
